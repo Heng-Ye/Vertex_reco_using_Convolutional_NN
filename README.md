@@ -3,13 +3,13 @@
 Training Procedure for recognizatiing inelastic-/elastic scattering vertex:\
  - Prepare sample for the training
 --> run the code as: **python prepare_data_cnn_vtx-id.py -c config.json**\
-(by default, config.json will be read)\
+    (by default, config.json will be read)\
 
-It will take a while to convert into two npy files, db_view_2_x.npy & db_view_2_y.npy ...\
-p.s. \
-(_2: collection view)\
-Need to change the view individually in config.json to produce the relative npy files\
-"selected_view_idx": 2, --> change 2 to 1 or 0\
+    It will take a while to convert into two npy files, db_view_2_x.npy & db_view_2_y.npy ...\
+    p.s. \
+    (_2: collection view)\
+    Need to change the view individually in config.json to produce the relative npy files\
+    "selected_view_idx": 2, --> change 2 to 1 or 0\
 
  - Start CNN Training
 --> run as: **python train_cnn.py -c config.json**
