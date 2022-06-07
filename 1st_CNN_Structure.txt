@@ -1,0 +1,133 @@
+Compiling CNN model...
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+main_input (InputLayer)      (None, 44, 48, 1)         0         
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 40, 44, 48)        1248      
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 40, 44, 48)        0         
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 84480)             0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 128)               10813568  
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 128)               0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 32)                4128      
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 32)                0         
+_________________________________________________________________
+el_inel_none_netout (Dense)  (None, 3)                 99        
+=================================================================
+
+
+
+
+
+0 main_input main_inpu
+1 conv2d_1/random_uniform/shape conv2d_1
+2 conv2d_1/random_uniform/min conv2d_1
+3 conv2d_1/random_uniform/max conv2d_1
+4 conv2d_1/random_uniform/RandomUniform conv2d_1
+5 conv2d_1/random_uniform/sub conv2d_1
+6 conv2d_1/random_uniform/mul conv2d_1
+7 conv2d_1/random_uniform conv2d_1
+8 conv2d_1/kernel conv2d_1
+9 conv2d_1/kernel/Assign conv2d_1
+10 conv2d_1/kernel/read conv2d_1
+11 conv2d_1/Const conv2d_1
+12 conv2d_1/bias conv2d_1
+13 conv2d_1/bias/Assign conv2d_1
+14 conv2d_1/bias/read conv2d_1
+15 conv2d_1/convolution/Shape conv2d_1
+16 conv2d_1/convolution/dilation_rate conv2d_1
+17 conv2d_1/convolution conv2d_1
+18 conv2d_1/BiasAdd conv2d_1
+19 conv2d_1/Relu conv2d_1
+20 dropout_1/Identity dropout_1
+21 flatten_1/Shape flatten_1
+22 flatten_1/strided_slice/stack flatten_1
+23 flatten_1/strided_slice/stack_1 flatten_1
+24 flatten_1/strided_slice/stack_2 flatten_1
+25 flatten_1/strided_slice flatten_1
+26 flatten_1/Const flatten_1
+27 flatten_1/Prod flatten_1
+28 flatten_1/stack/0 flatten_1
+29 flatten_1/stack flatten_1
+30 flatten_1/Reshape flatten_1
+31 dense_1/random_uniform/shape dense_1
+32 dense_1/random_uniform/min dense_1
+33 dense_1/random_uniform/max dense_1
+34 dense_1/random_uniform/RandomUniform dense_1
+35 dense_1/random_uniform/sub dense_1
+36 dense_1/random_uniform/mul dense_1
+37 dense_1/random_uniform dense_1
+38 dense_1/kernel dense_1
+39 dense_1/kernel/Assign dense_1
+40 dense_1/kernel/read dense_1
+41 dense_1/Const dense_1
+42 dense_1/bias dense_1
+43 dense_1/bias/Assign dense_1
+44 dense_1/bias/read dense_1
+45 dense_1/MatMul dense_1
+46 dense_1/BiasAdd dense_1
+47 dense_1/Relu dense_1
+48 dropout_2/Identity dropout_2
+49 dense_2/random_uniform/shape dense_2
+50 dense_2/random_uniform/min dense_2
+51 dense_2/random_uniform/max dense_2
+52 dense_2/random_uniform/RandomUniform dense_2
+53 dense_2/random_uniform/sub dense_2
+54 dense_2/random_uniform/mul dense_2
+55 dense_2/random_uniform dense_2
+56 dense_2/kernel dense_2
+57 dense_2/kernel/Assign dense_2
+58 dense_2/kernel/read dense_2
+59 dense_2/Const dense_2
+60 dense_2/bias dense_2
+61 dense_2/bias/Assign dense_2
+62 dense_2/bias/read dense_2
+63 dense_2/MatMul dense_2
+64 dense_2/BiasAdd dense_2
+65 dense_2/Relu dense_2
+66 dropout_3/Identity dropout_3
+67 el_inel_none_netout/random_uniform/shape el_inel_none_netout
+68 el_inel_none_netout/random_uniform/min el_inel_none_netout
+69 el_inel_none_netout/random_uniform/max el_inel_none_netout
+70 el_inel_none_netout/random_uniform/RandomUniform el_inel_none_netout
+71 el_inel_none_netout/random_uniform/sub el_inel_none_netout
+72 el_inel_none_netout/random_uniform/mul el_inel_none_netout
+73 el_inel_none_netout/random_uniform el_inel_none_netout
+74 el_inel_none_netout/kernel el_inel_none_netout
+75 el_inel_none_netout/kernel/Assign el_inel_none_netout
+76 el_inel_none_netout/kernel/read el_inel_none_netout
+77 el_inel_none_netout/Const el_inel_none_netout
+78 el_inel_none_netout/bias el_inel_none_netout
+79 el_inel_none_netout/bias/Assign el_inel_none_netout
+80 el_inel_none_netout/bias/read el_inel_none_netout
+81 el_inel_none_netout/MatMul el_inel_none_netout
+82 el_inel_none_netout/BiasAdd el_inel_none_netout
+83 el_inel_none_netout/Softmax el_inel_none_netout
+84 Placeholder Placeholde
+85 Assign Assig
+86 Placeholder_1 Placeholder_
+87 Assign_1 Assign_
+88 Placeholder_2 Placeholder_
+89 Assign_2 Assign_
+90 Placeholder_3 Placeholder_
+91 Assign_3 Assign_
+92 Placeholder_4 Placeholder_
+93 Assign_4 Assign_
+94 Placeholder_5 Placeholder_
+95 Assign_5 Assign_
+96 Placeholder_6 Placeholder_
+97 Assign_6 Assign_
+98 Placeholder_7 Placeholder_
+99 Assign_7 Assign_
+100 init ini
+Output node names found: [u'el_inel_none_netout/Softmax']
+Converted 8 variables to const ops.
+[u'main_input', u'conv2d_1/kernel', u'conv2d_1/kernel/read', u'conv2d_1/bias', u'conv2d_1/bias/read', u'conv2d_1/convolution', u'conv2d_1/BiasAdd', u'conv2d_1/Relu', u'dropout_1/Identity', u'flatten_1/Shape', u'flatten_1/strided_slice/stack', u'flatten_1/strided_slice/stack_1', u'flatten_1/strided_slice/stack_2', u'flatten_1/strided_slice', u'flatten_1/Const', u'flatten_1/Prod', u'flatten_1/stack/0', u'flatten_1/stack', u'flatten_1/Reshape', u'dense_1/kernel', u'dense_1/kernel/read', u'dense_1/bias', u'dense_1/bias/read', u'dense_1/MatMul', u'dense_1/BiasAdd', u'dense_1/Relu', u'dropout_2/Identity', u'dense_2/kernel', u'dense_2/kernel/read', u'dense_2/bias', u'dense_2/bias/read', u'dense_2/MatMul', u'dense_2/BiasAdd', u'dense_2/Relu', u'dropout_3/Identity', u'el_inel_none_netout/kernel', u'el_inel_none_netout/kernel/read', u'el_inel_none_netout/bias', u'el_inel_none_netout/bias/read', u'el_inel_none_netout/MatMul', u'el_inel_none_netout/BiasAdd', u'el_inel_none_netout/Softmax']
+all done!
+
