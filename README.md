@@ -1,4 +1,5 @@
-# Proton Inelastic- and Elastic-scattering Interaction Vertex Recognization using Convolutional Neural Network
+# Proton Interaction Vertex Recognization using Convolutional Neural Network
+
 
 Training Procedure:
 [1] Prepare sample for the training\
